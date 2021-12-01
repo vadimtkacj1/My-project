@@ -19,11 +19,28 @@
   animation-name: feed;
 }
 
-.emall:invalid {
+.emall {
   width: 300px;
   height: 40px;
+}
+
+/* input:invalid {
   box-shadow: inset 0px 0px 10px red;
   margin-bottom: 25px;
+} */
+
+input:invalid {
+  box-shadow: inset 0px 0px 10px red;
+  border: red;
+}
+
+input:valid {
+  box-shadow: none;
+}
+
+input::placeholder {
+  color: red;
+  padding: 10px;
 }
 
 @keyframes feed {

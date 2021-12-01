@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css-reset.css">
     <link rel="stylesheet" href="font.css">
+    <link rel="stylesheet" href="swiper-bundle.css">
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
@@ -20,20 +21,15 @@
                 
                 <label for="">Ваше имя*</label>
                 <input type="text" class="input">
-                <span></span>
                
                 <label for="">Телефон*</label>
                 <input type="tel" class="input"> 
-                <span></span>
                 
                 <label for="">E-mail*</label>
                 <input type="email" class="emall" placeholder="Поле обезательное для заполнения" required >
-                <span></span>
 
                 <label for="">Сообщение</label>
-                <input type="text" class="message">
-                <span></span>
-
+                <textarea></textarea>
                 
                 <button>ОТПРАВИТЬ</button>
             </form>
@@ -56,6 +52,11 @@
     <nav>
         <div class="wrapper_nav">
             <div class="container">
+                <div class="hamburger-menu">
+                <input id="menu__toggle" type="checkbox" />
+                <label class="menu__btn" for="menu__toggle">
+                  <span></span>
+                </label>
                 <ul class="menu">
                     <li class="menu_item"><span>Главное</span></li> 
                     <li class="menu_item"><span>Каталог</span></li>
@@ -64,23 +65,22 @@
                     <li class="menu_item"><span>Контакты</span></li>
                 </ul>
             </div>
+            </div>
         </div>
     </nav>
     <section>
         <div class="wrapper_slider">
-            <div class="slider_box">
-                <div class="slider">
-                    <div class="slider-line">         
-                        <img src="img/slide1.jpg" alt="slide1" class="img-slider">
-                        <img src="img/slide2.jpg" alt="slide2" class="img-slider">
+               <div class="slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="img/slide1.jpg" alt="Slider"></div>
+                    <div class="swiper-slide"><img src="img/slide2.jpg" alt="SLIDER"></div>
+                </div>
+                <div class="container">
+                    <div class="swiper-left"><img src="img/arrow-left.svg" alt="ARROW"></div>
+                    <div class="swiper-right"><img src="img/arrow-right.svg" alt="ARROR">
                     </div>
                 </div>
-            </div>
-            <div class="container">
-                <div class="controls">
-                    <button class="button button-left"><img src="img/arrow1.png" alt="arrow1"></button>
-                    <button class="button button-right"><img src="img/arrow2.png" alt="arrow2"></span></button>
-                </div>
+
             </div>
         </div>
     </section>
@@ -136,45 +136,47 @@
                     </main>
                     <article>
                         <div class="centerblock">
-                            <div class="block-card">
-                                <div class="card">
-                                    <img src="img/nophoto.jpg" alt="nophoto" class="nophoto">
-                                    <div class="card-text">Самый клевый чайник, который надо купить!</div>
-                                    <div class="card-price">
-                                        <div class="price-many">1 900 р.</div>
-                                        <img src="img/addtobasket_mini.png" alt="addtobasket_mini" class="img-price">
+                            <div class="block-cards">
+                                <div class="block-card">
+                                    <div class="card">
+                                        <img src="img/nophoto.jpg" alt="nophoto" class="nophoto">
+                                        <div class="card-text">Самый клевый чайник, который надо купить!</div>
+                                        <div class="card-price">
+                                            <div class="price-many">1 900 р.</div>
+                                            <img src="img/addtobasket_mini.png" alt="addtobasket_mini" class="img-price">
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="card">
-                                    <img src="img/nophoto.jpg" alt="nophoto" class="nophoto">
-                                    <div class="card-text">Самый клевый чайник, который надо купить!</div>
-                                    <div class="card-price">
-                                        <div class="price-many">1 900 р.</div>
-                                        <img src="img/addtobasket_mini.png" alt="addtobasket_mini" class="img-price">
+                                    <div class="card">
+                                        <img src="img/nophoto.jpg" alt="nophoto" class="nophoto">
+                                        <div class="card-text">Самый клевый чайник, который надо купить!</div>
+                                        <div class="card-price">
+                                            <div class="price-many">1 900 р.</div>
+                                            <img src="img/addtobasket_mini.png" alt="addtobasket_mini" class="img-price">
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="card">
-                                    <img src="img/nophoto.jpg" alt="nophoto" class="nophoto">
-                                    <div class="card-text">Самый клевый чайник, который надо купить!</div>
-                                    <div class="card-price">
-                                        <div class="price-many">1 900 р.</div>
-                                        <img src="img/addtobasket_mini.png" alt="addtobasket_mini" class="img-price">
+                                    <div class="card">
+                                        <img src="img/nophoto.jpg" alt="nophoto" class="nophoto">
+                                        <div class="card-text">Самый клевый чайник, который надо купить!</div>
+                                        <div class="card-price">
+                                            <div class="price-many">1 900 р.</div>
+                                            <img src="img/addtobasket_mini.png" alt="addtobasket_mini" class="img-price">
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="card">
-                                    <img src="img/nophoto.jpg" alt="nophoto" class="nophoto">
-                                    <div class="card-text">Самый клевый чайник, который надо купить!</div>
-                                    <div class="card-price">
-                                        <div class="price-many">1 900 р.</div>
-                                        <img src="img/addtobasket_mini.png" alt="addtobasket_mini" class="img-price">
+                                    <div class="card">
+                                        <img src="img/nophoto.jpg" alt="nophoto" class="nophoto">
+                                        <div class="card-text">Самый клевый чайник, который надо купить!</div>
+                                        <div class="card-price">
+                                            <div class="price-many">1 900 р.</div>
+                                            <img src="img/addtobasket_mini.png" alt="addtobasket_mini" class="img-price">
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="card">
-                                    <img src="img/nophoto.jpg" alt="nophoto" class="nophoto">
-                                    <div class="card-text">Самый клевый чайник, который надо купить!</div>
-                                    <div class="card-price">
-                                        <div class="price-many">1 900 р.</div>
-                                        <img src="img/addtobasket_mini.png" alt="addtobasket_mini" class="img-price">
+                                    <div class="card">
+                                        <img src="img/nophoto.jpg" alt="nophoto" class="nophoto">
+                                        <div class="card-text">Самый клевый чайник, который надо купить!</div>
+                                        <div class="card-price">
+                                            <div class="price-many">1 900 р.</div>
+                                            <img src="img/addtobasket_mini.png" alt="addtobasket_mini" class="img-price">
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -225,6 +227,7 @@
         </div>
     </footer>
     <script src="list.js"></script>
+    <script src="swiper-bundle.js"></script>
     <script src="slider.js"></script>
     <script src="feedback.js"></script>
 </body>

@@ -478,7 +478,6 @@ textarea {
   .card:nth-child(3n) {
     margin: 0px 15px 20px 0;
   }
-
   .block-card {
     max-width: 530px;
   }
@@ -575,7 +574,6 @@ textarea {
     cursor: pointer;
     z-index: 200;
   }
-
   .menu__btn > span,
   .menu__btn > span::before,
   .menu__btn > span::after {

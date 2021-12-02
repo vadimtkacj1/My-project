@@ -195,6 +195,9 @@ textarea {
   font-size: 27px;
   padding: 25px 0;
 }
+.hamburger-menu {
+  margin: 0;
+}
 
 .menu_item span {
   padding: 25px 0;
@@ -491,6 +494,7 @@ textarea {
 
 #menu__toggle {
   opacity: 0;
+  display: none;
 }
 
 @media (max-width: 1000px) {
@@ -642,6 +646,10 @@ textarea {
   }
   .menu__item:hover {
     background-color: #cfd8dc;
+  }
+
+  #menu__togle {
+    display: flex;
   }
 
   #menu__toggle:checked ~ .menu__btn > span {

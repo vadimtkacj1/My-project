@@ -1,5 +1,5 @@
 const feedback = document.querySelector('.feedback');
-const feedbackButton = document.querySelector('.feedback-button');
+const feedbackButton = document.querySelector('.feedback-button_item');
 const output = document.querySelector('.output');
 
 feedbackButton.onclick = function () {
